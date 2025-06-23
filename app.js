@@ -1,6 +1,7 @@
 const boton= document.getElementById("boton");
 const titulo= document.querySelector("h1");
-let parrafo= document.getElementById("resultado");
+const ingreso= document.getElementById("ingresa");
+// let parrafo= document.getElementById("resultado");
 
 
 boton.addEventListener("click", hacer_algo);
@@ -13,7 +14,19 @@ function hacer_algo(){
 
     //operador ternario
     const resultado= edad>18? "Podes votar": "No podes votar";
-    parrafo.textContent= resultado;
+
+    //para evitar que se sigan creando p
+    ingreso.innerHTML= ""; 
+    
+    //creo dinamicamente un elemento p
+    const parrafo = document.createElement("p");
+  
+    //lo cargo dentro del div ingreso
+    ingreso.appendChild(parrafo);
+    ingreso.textContent= resultado;
+
+
+    // parrafo.textContent= resultado;
 
     // console.log(resultado);
 
