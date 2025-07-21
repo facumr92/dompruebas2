@@ -34,16 +34,23 @@
 </div>
 -->
 
+<form id="formulario">
+    <label>Nombre:</label>
+    <input type="text" id="nombre" /><br>
+  
+    <label>Contraseña:</label>
+    <input type="password" id="contrasena" /><br>
+  
+    <label>Repetir Contraseña:</label>
+    <input type="password" id="repetir" /><br>
+  
+    <button type="submit">Enviar</button>
+  </form>
+  <div id="mensaje" style="color:red;"></div>
+  
 
-<form action="" id="formulario">
-<label for=""></label>
-<input type="text" name="" id="nombre" placeholder="Ingrese su nombre">
-<input type="text" name="" id="apellido" placeholder="Ingrese su apellido">
-<input type="text" name="" id="edad" placeholder="Ingrese su nacimiento">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<button type="button" id="enviar"> enviar</button>
-
-</form>
     <script src="app.js"></script>
 </body>
 </html>
